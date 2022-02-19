@@ -1,0 +1,44 @@
+@mixin animation($anim) {
+  animation: $anim;
+  -webkit-animation: $anim;
+  -moz-animation: $anim;
+  -o-animation: $anim;
+}
+
+@mixin transform($trans...) {
+  transform: $trans;
+  -webkit-transform: $trans;
+  -moz-transform: $trans;
+  -ms-transform: $trans;
+  -o-transform: $trans;
+}
+
+@mixin transition($trans...) {
+  transition: $trans;
+  -webkit-transition: $trans;
+  -moz-transition: $trans;
+  -ms-transition: $trans;
+  -o-transition: $trans;
+}
+
+@mixin keyframes-animation($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}

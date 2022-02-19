@@ -1,0 +1,224 @@
+@import "browser-support-mixins";
+
+@mixin responsive($port-view) {
+  @if $port-view==tiny {
+    @media (max-width: 569px) {
+      @content;
+    }
+  }
+
+  @else if $port-view==very-small {
+    @media (max-width: 669px) {
+      @content;
+    }
+  }
+
+  @else if $port-view==mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @else if $port-view==small {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  }
+
+  @else if $port-view==medium {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+
+  @else if $port-view==large {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@mixin up-down-animation-mixin($name, $distance) {
+  @include keyframes-animation($name) {
+    0% {
+      @include transform(translateY(0));
+    }
+
+    20% {
+      @include transform(translateY(-#{$distance}));
+    }
+
+    40% {
+      @include transform(translateY(0));
+    }
+
+    80% {
+      @include transform(translateY(#{$distance}));
+    }
+
+    100% {
+      @include transform(translateY(0));
+    }
+  }
+}
+
+@mixin overlay-begin($on-left: false) {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0;
+
+  @if $on-left==true {
+    left: 0;
+  }
+
+  @else {
+    right: 0;
+  }
+}
+
+@mixin active {
+  color: $primary-color;
+}
+
+@mixin flex-space-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin link($color) {
+  color: $color;
+
+  &:hover,
+  &:active,
+  &:visited {
+    color: $color;
+  }
+}
+
+@mixin custome-landing-style {
+  flex: 1;
+  text-align: center;
+
+  &__paragraph {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+@mixin card {
+  flex-basis: 22%;
+  overflow: hidden;
+
+  @include responsive(mobile) {
+    flex-basis: 45%;
+  }
+
+  @include responsive(tiny) {
+    flex-basis: 97%;
+  }
+
+  @include responsive(small) {
+    flex-basis: 45%;
+  }
+
+  @include responsive(medium) {
+    flex-basis: 30%;
+  }
+}
+
+@mixin card-2 {
+  flex-basis: 30%;
+
+  @include responsive(mobile) {
+    flex-basis: 47%;
+  }
+
+  @include responsive(small) {
+    flex-basis: 47%;
+  }
+
+  @include responsive(medium) {
+    flex-basis: 47%;
+  }
+
+  @include responsive(very-small) {
+    flex-basis: 100%;
+  }
+}
+
+@mixin growing-center-splash($parent, $color, $opacity: 0.3, $disappear: true) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: $color;
+    opacity: $opacity;
+
+    @if $disappear==true {
+      z-index: 1;
+    }
+
+    @else {
+      z-index: -1;
+    }
+
+    @include transform(translate(-50%, -50%));
+    @include transition($primary-transition);
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+      height: 100%;
+
+      @if $disappear==true {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@mixin overlay($opacity) {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: $opacity;
+  }
+}
+
+@mixin card-theme($color, $parent) {
+  #{$parent}__image::before {
+    background-color: $color;
+  }
+
+  #{$parent}__title::before {
+    border-bottom-color: $color;
+  }
+
+  #{$parent}--more {
+    color: $color;
+    border-color: $color;
+
+    &::before {
+      background-color: $color;
+    }
+  }
+}
+
+@mixin fit-image {
+  img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
+}

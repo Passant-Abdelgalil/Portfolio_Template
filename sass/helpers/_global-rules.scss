@@ -1,0 +1,122 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: $font-family;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited,
+  &:active,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.container {
+  width: 60%;
+  padding: 0 12px;
+  margin: auto;
+
+  @include responsive(mobile) {
+    width: 100%;
+  }
+
+  @include responsive(small) {
+    width: 760px;
+  }
+
+  @include responsive(medium) {
+    width: 970px;
+  }
+
+  @include responsive(large) {
+    width: 1170px;
+  }
+}
+
+.section__headline {
+  position: relative;
+  width: fit-content;
+  font-size: 30px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  padding: 0 20px;
+  margin: auto;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    bottom: 20px;
+    z-index: -1;
+    background-color: $primary-color;
+    @include border-radius(6px);
+    @include transition($primary-transition);
+  }
+
+  &::before {
+    left: -30px;
+  }
+
+  &::after {
+    right: -30px;
+  }
+
+  &:hover {
+    @include keyframes-animation(turn-white) {
+      to {
+        color: white;
+        border-color: white
+      }
+    }
+
+    @include animation(turn-white 0.5s linear both 0.3s);
+
+    &::before {
+      @include border-radius(0);
+      bottom: 0;
+      left: 0;
+      width: calc(50% - 0.5px);
+      height: 100%;
+    }
+
+    &::after {
+      @include border-radius(0);
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: calc(50% - 0.5px);
+    }
+  }
+}
+
+.grid {
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+
+  @include responsive(mobile) {
+    justify-content: center;
+  }
+
+  @include responsive(very-small) {
+    justify-content: center;
+  }
+}
