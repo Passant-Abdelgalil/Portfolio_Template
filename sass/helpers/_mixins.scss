@@ -108,6 +108,16 @@
   }
 }
 
+@mixin custom-events-content{
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 80px;
+  
+  >img {
+    display: none;
+  }
+}
+
 @mixin card {
   flex-basis: 22%;
   overflow: hidden;

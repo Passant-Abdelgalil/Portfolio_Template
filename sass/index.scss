@@ -872,28 +872,16 @@
   position: relative;
 
   .content {
-    margin-top: 140px;
+    margin: 80px auto;
     display: flex;
 
     @include responsive(mobile) {
-      flex-direction: column;
-      justify-content: center;
-      margin-bottom: 80px;
+      @include custom-events-content;
       margin-top: 80px;
-
-      >img {
-        display: none;
-      }
     }
 
     @include responsive(small) {
-      justify-content: center;
-      flex-direction: column;
-      margin-bottom: 80px;
-
-      >img {
-        display: none;
-      }
+      @include custom-events-content;
     }
 
     >img {
@@ -1072,23 +1060,7 @@
   align-items: center;
   background-color: white;
   box-shadow: 0 5px 15px #bfbfbf;
-  flex-basis: 31%;
-
-  @include responsive(mobile) {
-    flex-basis: 47%;
-  }
-
-  @include responsive(small) {
-    flex-basis: 47%;
-  }
-
-  @include responsive(medium) {
-    flex-basis: 47%;
-  }
-
-  @include responsive(very-small) {
-    flex-basis: 98%;
-  }
+  @include card-2;
 
   &__type {
     font-size: 25px;
@@ -1275,8 +1247,6 @@
   flex-direction: column;
   @include flex-space-center;
 
-  // display: flex;
-  // justify-content: space-between;
   &__videoplayer {
     @include fit-image;
   }

@@ -1832,7 +1832,7 @@ a:visited, a:active, a:hover {
 }
 
 .events .content {
-  margin-top: 140px;
+  margin: 80px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
