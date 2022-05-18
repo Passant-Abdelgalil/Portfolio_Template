@@ -1134,8 +1134,8 @@ a:visited, a:active, a:hover {
 
 @media (max-width: 669px) {
   .feature-card {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 90vw;
+        flex-basis: 90vw;
   }
 }
 
@@ -1802,8 +1802,8 @@ a:visited, a:active, a:hover {
 
 @media (max-width: 669px) {
   .testimonial-card {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 90vw;
+        flex-basis: 90vw;
   }
 }
 
@@ -2062,8 +2062,8 @@ a:visited, a:active, a:hover {
 
 @media (max-width: 669px) {
   .member-card {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 90vw;
+        flex-basis: 90vw;
   }
 }
 
@@ -2410,8 +2410,8 @@ a:visited, a:active, a:hover {
 
 @media (max-width: 669px) {
   .service-card {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 90vw;
+        flex-basis: 90vw;
   }
 }
 
@@ -3761,8 +3761,8 @@ a:visited, a:active, a:hover {
 
 @media (max-width: 669px) {
   .plan-card {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 90vw;
+        flex-basis: 90vw;
   }
 }
 
