@@ -17,14 +17,6 @@
 @import "discounts/discounts.scss";
 @import "header.scss";
 
-.go-down {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  color: $primary-color;
-  @include up-down-animation-mixin(up-down-10, 10px);
-  @include animation(up-down-10 1s ease infinite);
-}
 
 .square-dots {
   position: absolute;
