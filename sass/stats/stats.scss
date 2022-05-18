@@ -1,0 +1,70 @@
+@import "../helpers/mixins";
+@import "../helpers/global-rules";
+
+.stats {
+    padding: $section-padding 0;
+    background-image: url("https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/stats.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    @include overlay(0.95);
+  
+    &::before {
+      background-color: white;
+      z-index: -1;
+    }
+  
+    .headline {
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+  
+  .stats-card {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    @include card;
+  
+    &__value {
+      font-size: 50px;
+      font-weight: 700;
+    }
+  
+    &__title {
+      font-size: 20px;
+      color: $primary-color;
+      font-style: italic;
+      font-weight: 700;
+    }
+  
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 0;
+      border: 0px solid $primary-color;
+      @include transition(height 1s);
+    }
+  
+    &::before {
+      left: 0;
+      bottom: 0;
+    }
+  
+    &::after {
+      right: 0;
+      top: 0;
+    }
+  
+    &:hover {
+      &::before,
+      &::after {
+        border-width: 1px;
+        height: calc(100% - 2px);
+      }
+    }
+  }
+  

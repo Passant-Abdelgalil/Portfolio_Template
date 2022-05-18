@@ -1,0 +1,231 @@
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+}
+
+.header .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
+  }
+}
+
+.header li > a {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.header li > a::after {
+  transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+  -o-transition: width 0.3s;
+}
+
+.header li > a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0;
+  left: 0;
+  background-color: #fafafa;
+  z-index: -1;
+  width: 0;
+  transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+  -o-transition: width 0.3s;
+}
+
+.header li:hover {
+  cursor: pointer;
+}
+
+.header li:hover > a::before {
+  width: 100%;
+}
+
+.header__logo {
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  color: #2196f3;
+  color: #2196f3;
+}
+
+.header__logo:hover, .header__logo:active, .header__logo:visited {
+  color: #2196f3;
+}
+
+.header__nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav-links__item > a {
+  line-height: 3;
+  color: black;
+}
+
+.header__nav-links__item > a:hover, .header__nav-links__item > a:active, .header__nav-links__item > a:visited {
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .header__nav-links__item > a {
+    font-size: 14px;
+  }
+}
+
+.header__nav-links__item > a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0;
+  left: 0;
+  height: 0;
+}
+
+.header__nav-links__item:hover > a {
+  color: #2196f3;
+}
+
+.header__nav-links__item:hover > a::after {
+  width: 100%;
+  border-top: 5px solid #2196f3;
+}
+
+.header__nav-links__item:last-child:hover .other-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .other-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: calc(100% + 1px);
+  padding: 20px;
+  background-color: white;
+  border-bottom: 3px solid #2196f3;
+}
+
+.header .other-links .col {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .header .other-links .col {
+    width: 100%;
+  }
+  .header .other-links .col:last-child li:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header .other-links .col {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+}
+
+.header .other-links img {
+  height: 200px;
+  width: 300px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header .other-links img {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .other-links img {
+    display: none;
+  }
+}
+
+.header .other-links .links li a {
+  color: #2196f3;
+  z-index: 1;
+}
+
+.header .other-links .links li a:hover, .header .other-links .links li a:active, .header .other-links .links li a:visited {
+  color: #2196f3;
+}
+
+.header .other-links .links li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.header .other-links .links li .icon {
+  margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+  .header .other-links .links li {
+    border-bottom: 1px solid #eee;
+  }
+  .header .other-links .links li a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .other-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=header.css.map */

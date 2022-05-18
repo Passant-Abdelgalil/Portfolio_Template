@@ -1,0 +1,163 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+
+  .container {
+    position: relative;
+    @include flex-space-center;
+    @include responsive(mobile) {
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 0;
+    }
+  }
+
+  li {
+    > a {
+      display: block;
+      position: relative;
+      font-size: 18px;
+      padding: 10px;
+
+      &::after {
+        @include transition(width $primary-transition);
+      }
+
+      &::before {
+        @include overlay-begin(true);
+        background-color: #fafafa;
+        z-index: -1;
+        width: 0;
+        @include transition(width $primary-transition);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      > a::before {
+        width: 100%;
+      }
+    }
+  }
+
+  &__logo {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: $primary-color;
+    @include link($primary-color);
+  }
+
+  &__nav-links {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      > a {
+        line-height: 3;
+        @include link(black);
+
+        @include responsive(mobile) {
+          font-size: 14px;
+        }
+
+        &::after {
+          @include overlay-begin(true);
+          height: 0;
+        }
+      }
+
+      &:hover {
+        > a {
+          color: $primary-color;
+
+          &::after {
+            width: 100%;
+            border-top: 5px solid $primary-color;
+          }
+        }
+      }
+
+      &:last-child:hover .other-links {
+        display: flex;
+      }
+    }
+  }
+
+  .other-links {
+    @include flex-space-center;
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: calc(100% + 1px);
+    padding: 20px;
+    background-color: white;
+    border-bottom: 3px solid $primary-color;
+
+    .col {
+      flex-basis: 28%;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0;
+
+      @include responsive(mobile) {
+        width: 100%;
+
+        &:last-child li:last-child {
+          border-bottom: none;
+        }
+      }
+
+      @include responsive(small) {
+        flex-basis: 48%;
+      }
+    }
+
+    img {
+      height: 200px;
+      width: 300px;
+      max-width: 100%;
+
+      @include responsive(small) {
+        display: none;
+      }
+
+      @include responsive(mobile) {
+        display: none;
+      }
+    }
+
+    .links li {
+      a {
+        @include link($primary-color);
+        z-index: 1;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #eee;
+      }
+
+      .icon {
+        margin-right: 5px;
+      }
+
+      @include responsive(mobile) {
+        border-bottom: 1px solid #eee;
+
+        a {
+          font-size: 17px;
+        }
+      }
+    }
+
+    @include responsive(mobile) {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import "../helpers/mixins";
+@import "../helpers/global-rules";
+
+.skills {
+  padding: $section-padding 0;
+
+  .content {
+    margin-top: 50px;
+    @include flex-space-center;
+
+    img {
+      @include responsive(mobile) {
+        display: none;
+      }
+
+      @include responsive(small) {
+        display: none;
+      }
+    }
+  }
+}
+
+.skill-rates {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 55%;
+  gap: 10px;
+
+  @include responsive(mobile) {
+    flex-basis: 98%;
+    margin: 0;
+  }
+
+  @include responsive(small) {
+    flex-basis: 98%;
+    margin: 0;
+  }
+}
+
+.skill-rate {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__bar {
+    $bar-height: 35px;
+    position: relative;
+    width: 100%;
+    background-color: $section-background;
+    height: $bar-height;
+
+    &::before {
+      @include overlay-begin(true);
+      background-color: $primary-color;
+    }
+
+    &::after {
+      position: absolute;
+      top: calc(-#{$bar-height} - 5px);
+      right: 0;
+      padding: 2px 5px;
+      font-size: 14px;
+      font-weight: bold;
+      color: $primary-color;
+      line-height: 1;
+      border: 2px solid $section-background;
+      @include border-radius(5px);
+    }
+
+    &.r-80 {
+      &::after {
+        content: "80%";
+      }
+
+      &::before {
+        width: 80%;
+      }
+    }
+
+    &.r-85 {
+      &::after {
+        content: "85%";
+      }
+
+      &::before {
+        width: 85%;
+      }
+    }
+
+    &.r-70 {
+      &::after {
+        content: "70%";
+      }
+
+      &::before {
+        width: 70%;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import "../helpers/mixins";
+@import "../helpers/global-rules";
+
+.landing {
+  padding: $section-padding 0;
+  position: relative;
+  background-color: $section-background;
+  height: 100vh;
+  .container {
+    min-height: calc(81vh - 72px);
+    @include flex-space-center;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-right: calc(52vw - 15px) solid white;
+    border-bottom: 60px solid white;
+    border-top: 60px solid transparent;
+    border-left: 48vw solid transparent;
+    left: 0;
+    bottom: 0px;
+  }
+
+  &__photo {
+    width: 600px;
+    @include up-down-animation-mixin(up-down-30, 30px);
+    @include animation(5s linear infinite up-down-30);
+
+    @include responsive(small) {
+      display: none;
+    }
+
+    @include responsive(mobile) {
+      display: none;
+    }
+  }
+
+  .content {
+    flex-basis: 45%;
+    padding: 0 15px;
+
+    &__headline {
+      font-size: 40px;
+      line-height: 1.15;
+      color: black;
+      font-weight: 700;
+      letter-spacing: -2px;
+      margin-bottom: 10px;
+    }
+
+    &__paragraph {
+      font-size: 23px;
+      color: #666;
+      line-height: 1.7;
+    }
+
+    @include responsive(mobile) {
+      @include custom-landing-style;
+
+      &__headline {
+        font-size: 28px;
+      }
+
+      &__paragraph {
+        font-size: 18px;
+      }
+    }
+
+    @include responsive(small) {
+      @include custom-landing-style;
+    }
+  }
+}

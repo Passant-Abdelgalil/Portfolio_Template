@@ -1,0 +1,80 @@
+@import "../helpers/mixins";
+@import "../helpers/global-rules";
+
+.video {
+    padding: $section-padding 0;
+  
+    .playshow {
+      width: 100%;
+      display: flex;
+      border: 1px solid #ccc;
+      margin-top: 80px;
+  
+      @include responsive(mobile) {
+        flex-direction: column;
+        justify-content: center;
+      }
+  
+      @include responsive(small) {
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+  
+  .top-videos {
+    &__header {
+      font-weight: 700;
+      position: relative;
+      padding: 15px;
+      @include flex-space-center;
+      background-color: #f4f4f4;
+    }
+  
+    &__list {
+      .video-item {
+        padding-right: 100px;
+        position: relative;
+        padding: 15px 20px;
+        border-bottom: 1px solid #ccc;
+        @include transition(0.3s);
+  
+        &:hover {
+          cursor: pointer;
+          color: $primary-color;
+          background-color: #fafafa;
+        }
+  
+        &:last-child {
+          border-bottom: none;
+        }
+  
+        &__title {
+          text-transform: capitalize;
+        }
+  
+        &__period {
+          color: #777;
+        }
+      }
+    }
+  }
+  
+  .screen {
+    flex-basis: 74%;
+    padding: 10px;
+    background-color: $section-background;
+    flex-direction: column;
+    @include flex-space-center;
+  
+    &__videoplayer {
+      @include fit-image;
+    }
+  
+    &__comment {
+      padding: 15px 20px;
+      background-color: white;
+      width: 100%;
+    }
+  }
+  

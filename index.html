@@ -1,847 +1,1131 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- Stylesheet link-->
-    <link rel="stylesheet" href="sass/index.css">
+    <link rel="stylesheet" href="sass/index.css" />
     <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Fontawesome-->
-    <script src="https://kit.fontawesome.com/42504daa0a.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/42504daa0a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container">
-            <a class="header__logo" href="#">Elzero</a>
-            <nav>
-                <ul class="header__nav-links">
-                    <li class="header__nav-links__item"><a href="#">Articles</a></li>
-                    <li class=" header__nav-links__item"><a href="#">Gallery</a></li>
-                    <li class=" header__nav-links__item"><a href="#">Features</a></li>
-                    <li class=" header__nav-links__item">
-                        <a href="#">Other Links</a>
-                        <div class=" other-links">
-                            <img class="col"
-                                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/megamenu.png">
-                            <ul class="col links">
-                                <li><a href="#"><i class=" icon far fa-comments fa-fw"></i> Testimonials</a>
-                                </li>
-                                <li><a href="#"><i class=" icon far fa-user fa-fw"></i>Team Members</a></li>
-                                <li><a href="#"><i class=" icon far fa-building fa-fw"></i> Services</a></li>
-                                <li><a href="#"><i class=" icon far fa-check-circle fa-fw"></i> Our
-                                        Skills</a></li>
-                                <li><a href="#"> <i class=" icon far fa-clipboard fa-fw"></i>How It Works</a>
-                                </li>
-                            </ul>
-                            <ul class="col links">
-                                <li><a href="#"><i class=" icon far fa-calendar-alt fa-fw"></i> Events</a>
-                                </li>
-                                <li><a href="#"><i class=" icon fas fa-server fa-fw"></i> Pricing Plans</a>
-                                </li>
-                                <li><a href="#"><i class=" icon far fa-play-circle fa-fw"></i> Top Videos</a>
-                                </li>
-                                <li><a href="#"><i class=" icon far fa-chart-bar fa-fw"></i> Stats</a></li>
-                                <li><a href="#"><i class=" icon fas fa-percent fa-fw"></i> Request A
-                                        Discount</a></li>
-                            </ul>
-                        </div>
-                    </li>
+      <div class="container">
+        <a class="header__logo" href="#">Elzero</a>
+        <nav>
+          <ul class="header__nav-links">
+            <li class="header__nav-links__item">
+              <a href="#articles">Articles</a>
+            </li>
+            <li class="header__nav-links__item">
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li class="header__nav-links__item">
+              <a href="#features">Features</a>
+            </li>
+            <li class="header__nav-links__item">
+              <a href="#">Other Links</a>
+              <div class="other-links">
+                <img
+                  class="col"
+                  alt="img"
+                  src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/megamenu.png"
+                />
+                <ul class="col links">
+                  <li>
+                    <a href="#testimonials"
+                      ><i class="icon far fa-comments fa-fw"></i>
+                      Testimonials</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#team-members"
+                      ><i class="icon far fa-user fa-fw"></i>Team Members</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#services"
+                      ><i class="icon far fa-building fa-fw"></i> Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#our-skills"
+                      ><i class="icon far fa-check-circle fa-fw"></i> Our
+                      Skills</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#how-it-works">
+                      <i class="icon far fa-clipboard fa-fw"></i>How It Works</a
+                    >
+                  </li>
                 </ul>
-            </nav>
-        </div>
+                <ul class="col links">
+                  <li>
+                    <a href="#events"
+                      ><i class="icon far fa-calendar-alt fa-fw"></i> Events</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#pricing"
+                      ><i class="icon fas fa-server fa-fw"></i> Pricing Plans</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#video"
+                      ><i class="icon far fa-play-circle fa-fw"></i> Top
+                      Videos</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#stats"
+                      ><i class="icon far fa-chart-bar fa-fw"></i> Stats</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#discount"
+                      ><i class="icon fas fa-percent fa-fw"></i> Request A
+                      Discount</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section class="landing">
-        <div class="container">
+      <div class="container">
+        <div class="content">
+          <h1 class="content__headline">Welcome, To Elzero World</h1>
+          <p class="content__paragraph">
+            Here Iam gonna share everything about my life. Books Iam reading,
+            Games Iam Playing, Stories and Events
+          </p>
+        </div>
+        <img
+          class="landing__photo"
+          alt="landing image"
+          src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/landing-image.png"
+        />
+        <i class="fas fa-angle-double-down fa-2x go-down"></i>
+      </div>
+    </section>
+    <section class="articles" id="articles">
+      <div class="container">
+        <h2 class="section__headline">Articles</h2>
+        <div class="grid">
+          <div class="card">
+            <img
+              class="card__image"
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-01.jpg"
+            />
             <div class="content">
-                <h1 class="content__headline">Welcome, To Elzero World</h1>
-                <p class="content__paragraph">Here Iam gonna share everything about my life. Books Iam reading, Games
-                    Iam Playing, Stories and
-                    Events</p>
+              <h3 class="card__title">Test Title</h3>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reprehenderit
+              </p>
+              <a class="card--read-more">
+                <span>Read More</span>
+                <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
             </div>
-            <img class="landing__photo"
-                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/landing-image.png">
-            <i class="fas fa-angle-double-down fa-2x go-down"></i>
-        </div>
-    </section>
-    <section class="articles">
-        <div class="container">
-            <h2 class="section__headline">Articles</h2>
-            <div class="grid">
-                <div class="card">
-                    <img class="card__image"
-                        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-01.jpg">
-                    <div class="content">
-                        <h3 class="card__title">Test Title</h3>
-                        <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
-                        </p>
-                        <a class="card--read-more"> <span>Read More</span> <i
-                                class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card__image"
-                        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-02.jpg">
-                    <div class="content">
-
-                        <h3 class="card__title">Test Title</h3>
-                        <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
-                        </p>
-                        <a class="card--read-more"> <span>Read More</span> <i
-                                class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card__image"
-                        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-03.jpg">
-                    <div class="content">
-
-                        <h3 class="card__title">Test Title</h3>
-                        <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
-                        </p>
-                        <a class="card--read-more"> <span>Read More</span> <i
-                                class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card__image"
-                        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-04.jpg">
-                    <div class="content">
-                        <h3 class="card__title">Test Title</h3>
-                        <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
-                        </p>
-                        <a class="card--read-more"> <span>Read More</span> <i
-                                class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card__image"
-                        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-05.jpg">
-                    <div class="content">
-                        <h3 class="card__title">Test Title</h3>
-                        <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
-                        </p>
-                        <a class="card--read-more"> <span>Read More</span> <i
-                                class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card__image"
-                        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-06.jpg">
-                    <div class="content">
-                        <h3 class="card__title">Test Title</h3>
-                        <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
-                        </p>
-                        <a class="card--read-more"> <span>Read More</span> <i
-                                class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card__image"
-                        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-07.jpg">
-                    <div class="content">
-                        <h3 class="card__title">Test Title</h3>
-                        <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
-                        </p>
-                        <a class="card--read-more"> <span>Read More</span> <i
-                                class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card__image"
-                        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-08.jpg">
-                    <div class="content">
-                        <h3 class="card__title">Test Title</h3>
-                        <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
-                        </p>
-                        <a class="card--read-more"> <span>Read More</span> <i
-                                class="fas fa-long-arrow-alt-right"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="gallery">
-        <div class="container">
-            <h2 class="section__headline">Gallery</h2>
-            <div class="grid">
-                <div class="image-card">
-                    <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-01.png">
-                </div>
-                <div class="image-card">
-                    <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-02.png">
-                </div>
-                <div class="image-card">
-                    <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-03.jpg">
-                </div>
-                <div class="image-card">
-                    <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-04.png">
-                </div>
-                <div class="image-card">
-                    <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-05.jpg">
-                </div>
-                <div class="image-card">
-                    <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-06.png">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="features">
-        <div class="container">
-            <h2 class="section__headline">Features</h2>
-            <div class="grid">
-                <div class="feature-card red">
-                    <div class="feature-card__image red">
-                        <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/features-01.jpg">
-                    </div>
-                    <h2 class="feature-card__title">Quality</h2>
-                    <p class="feature-card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                        harum hic veniam eligendi minima</p>
-                    <a class="feature-card--more">More</a>
-                </div>
-                <div class="feature-card green">
-                    <div class="feature-card__image green">
-                        <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/features-02.jpg">
-                    </div>
-                    <h2 class="feature-card__title">Time</h2>
-                    <p class="feature-card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                        harum hic veniam eligendi minima</p>
-                    <a class="feature-card--more">More</a>
-                </div>
-                <div class="feature-card blue">
-                    <div class="feature-card__image blue">
-                        <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/features-03.jpg">
-                    </div>
-                    <h2 class="feature-card__title">Passion</h2>
-                    <p class="feature-card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                        harum hic veniam eligendi minima</p>
-                    <a class="feature-card--more">More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section__headline">Testimonials</h2>
-            <div class="grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-card__image">
-                        <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/avatar-01.png">
-                    </div>
-                    <h3 class="testimonial-card__title">Mohamed Farag</h3>
-                    <h4 class="testimonial-card__subtitle">Full Stack Developer</h4>
-                    <div class="stars">
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="testimonial-card__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet
-                        est natus quaerat ducimus
-                    </p>
-                    <div></div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-card__image">
-                        <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/avatar-02.png">
-                    </div>
-                    <h3 class="testimonial-card__title">Mohamed Ibrahim</h3>
-                    <h4 class="testimonial-card__subtitle">Full Stack Developer</h4>
-                    <div class="stars">
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="testimonial-card__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet
-                        est natus quaerat ducimus
-                    </p>
-                    <div></div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-card__image">
-                        <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/avatar-03.png">
-                    </div>
-                    <h3 class="testimonial-card__title">Shady Nabil</h3>
-                    <h4 class="testimonial-card__subtitle">Full Stack Developer</h4>
-                    <div class="stars">
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="testimonial-card__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet
-                        est natus quaerat ducimus
-                    </p>
-                    <div></div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-card__image">
-                        <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/avatar-04.png">
-                    </div>
-                    <h3 class="testimonial-card__title">Amr Hendawy</h3>
-                    <h4 class="testimonial-card__subtitle">Full Stack Developer</h4>
-                    <div class="stars">
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-card__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet
-                        est natus quaerat ducimus
-                    </p>
-                    <div></div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-card__image">
-                        <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/avatar-05.png">
-                    </div>
-                    <h3 class="testimonial-card__title">Sherief Ashraf</h3>
-                    <h4 class="testimonial-card__subtitle">Full Stack Developer</h4>
-                    <div class="stars">
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="testimonial-card__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet
-                        est natus quaerat ducimus
-                    </p>
-                    <div></div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-card__image">
-                        <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/avatar-06.png">
-                    </div>
-                    <h3 class="testimonial-card__title">Osama Mohamed</h3>
-                    <h4 class="testimonial-card__subtitle">Full Stack Developer</h4>
-                    <div class="stars">
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="testimonial-card__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet
-                        est natus quaerat ducimus
-                    </p>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="team-members">
-        <div class="container">
-            <h2 class="section__headline">Team Members</h2>
-            <div class="grid">
-                <div class="member-card">
-                    <div class="media">
-                        <img class="member-card__image"
-                            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-01.jpg">
-                        <div class="member-card--social">
-                            <a href="#"><i class=" fab fa-facebook-f"></i></a>
-                            <a href="#"><i class=" fab fa-twitter"></i></a>
-                            <a href="#"><i class=" fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class=" fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="member-card__title">Name</h3>
-                    <p class="member-card__desc">Simple Short Description</p>
-                </div>
-                <div class="member-card">
-                    <div class="media">
-                        <img class="member-card__image"
-                            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-02.jpg">
-                        <div class="member-card--social">
-                            <a href="#"><i class=" fab fa-facebook-f"></i></a>
-                            <a href="#"><i class=" fab fa-twitter"></i></a>
-                            <a href="#"><i class=" fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class=" fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="member-card__title">Name</h3>
-                    <p class="member-card__desc">Simple Short Description</p>
-                </div>
-                <div class="member-card">
-                    <div class="media">
-                        <img class="member-card__image"
-                            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-03.jpg">
-                        <div class="member-card--social">
-                            <a href="#"><i class=" fab fa-facebook-f"></i></a>
-                            <a href="#"><i class=" fab fa-twitter"></i></a>
-                            <a href="#"><i class=" fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class=" fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="member-card__title">Name</h3>
-                    <p class="member-card__desc">Simple Short Description</p>
-                </div>
-                <div class="member-card">
-                    <div class="media">
-                        <img class="member-card__image"
-                            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-04.jpg">
-                        <div class="member-card--social">
-                            <a href="#"><i class=" fab fa-facebook-f"></i></a>
-                            <a href="#"><i class=" fab fa-twitter"></i></a>
-                            <a href="#"><i class=" fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class=" fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="member-card__title">Name</h3>
-                    <p class="member-card__desc">Simple Short Description</p>
-                </div>
-                <div class="member-card">
-                    <div class="media">
-                        <img class="member-card__image"
-                            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-05.png">
-                        <div class="member-card--social">
-                            <a href="#"><i class=" fab fa-facebook-f"></i></a>
-                            <a href="#"><i class=" fab fa-twitter"></i></a>
-                            <a href="#"><i class=" fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class=" fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="member-card__title">Name</h3>
-                    <p class="member-card__desc">Simple Short Description</p>
-                </div>
-                <div class="member-card">
-                    <div class="media">
-                        <img class="member-card__image"
-                            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-06.png">
-                        <div class="member-card--social">
-                            <a href="#"><i class=" fab fa-facebook-f"></i></a>
-                            <a href="#"><i class=" fab fa-twitter"></i></a>
-                            <a href="#"><i class=" fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class=" fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="member-card__title">Name</h3>
-                    <p class="member-card__desc">Simple Short Description</p>
-                </div>
-                <div class="member-card">
-                    <div class="media">
-                        <img class="member-card__image"
-                            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-07.jpg">
-                        <div class="member-card--social">
-                            <a href="#"><i class=" fab fa-facebook-f"></i></a>
-                            <a href="#"><i class=" fab fa-twitter"></i></a>
-                            <a href="#"><i class=" fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class=" fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="member-card__title">Name</h3>
-                    <p class="member-card__desc">Simple Short Description</p>
-                </div>
-                <div class="member-card">
-                    <div class="media">
-                        <img class="member-card__image"
-                            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-08.jpg">
-                        <div class="member-card--social">
-                            <a href="#"><i class=" fab fa-facebook-f"></i></a>
-                            <a href="#"><i class=" fab fa-twitter"></i></a>
-                            <a href="#"><i class=" fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class=" fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="member-card__title">Name</h3>
-                    <p class="member-card__desc">Simple Short Description</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="services">
-        <div class="container">
-            <h2 class="section__headline">Services</h2>
-            <div class="grid">
-                <div class="service-card">
-                    <i class="service-card__icon fas fa-user-shield fa-4x"></i>
-                    <h3 class="service-card__title">Security</h3>
-                    <div class="service-card__footer">
-                        <p class="index">01</p>
-                        <p>Details</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <i class="service-card__icon fas fa-tools fa-4x"></i>
-                    <h3 class="service-card__title">Fixing Issues</h3>
-                    <div class="service-card__footer">
-                        <p class="index">02</p>
-                        <p>Details</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <i class="service-card__icon fas fa-map-marked-alt fa-4x"></i>
-                    <h3 class="service-card__title">Location</h3>
-                    <div class="service-card__footer">
-                        <p class="index">03</p>
-                        <p>Details</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <i class="service-card__icon fas fa-laptop-code fa-4x"></i>
-                    <h3 class="service-card__title">Coding</h3>
-                    <div class="service-card__footer">
-                        <p class="index">04</p>
-                        <p>Details</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <i class="service-card__icon fas fa-palette fa-4x"></i>
-                    <h3 class="service-card__title">Security</h3>
-                    <div class="service-card__footer">
-                        <p class="index">05</p>
-                        <p>Details</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <i class="service-card__icon fas fa-bullhorn fa-4x"></i>
-                    <h3 class="service-card__title">Marketing</h3>
-                    <div class="service-card__footer">
-                        <p class="index">06</p>
-                        <p>Details</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="skills">
-        <div class="container">
-            <h2 class="section__headline">Our Skills</h2>
+          </div>
+          <div class="card">
+            <img
+              class="card__image"
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-02.jpg"
+            />
             <div class="content">
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/skills.png">
-                <div class="skill-rates">
-                    <div class="skill-rate">
-                        <p class="skill-rate__name">HTML</p>
-                        <div class="r-80 skill-rate__bar"></div>
-                    </div>
-                    <div class="skill-rate">
-                        <p class="skill-rate__name">CSS</p>
-                        <div class="r-85 skill-rate__bar"></div>
-                    </div>
-                    <div class="skill-rate">
-                        <p class="skill-rate__name">JavaScript</p>
-                        <div class="r-70 skill-rate__bar"></div>
-                    </div>
-                    <div class="skill-rate">
-                        <p class="skill-rate__name">Python</p>
-                        <div class="r-80 skill-rate__bar"></div>
-                    </div>
-                </div>
+              <h3 class="card__title">Test Title</h3>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reprehenderit
+              </p>
+              <a class="card--read-more">
+                <span>Read More</span>
+                <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
             </div>
-        </div>
-    </section>
-    <section class="workflow">
-        <div class="container">
-            <h2 class="section__headline">How It Works?</h2>
-            <div class="content">
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/work-steps.png">
-                <div class="steps">
-                    <div class="step-card">
-                        <img class="step-card__image"
-                            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/work-steps-1.png">
-                        <div class="text">
-                            <h3 class="step-card__title">Business Analysis</h3>
-                            <p class="step-card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel </p>
-                        </div>
-                    </div>
-                    <div class="step-card">
-                        <img class="step-card__image"
-                            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/work-steps-2.png">
-                        <div class="text">
-                            <h3 class="step-card__title">Architecture</h3>
-                            <p class="step-card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel </p>
-                        </div>
-                    </div>
-                    <div class="step-card">
-                        <img class="step-card__image"
-                            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/work-steps-3.png">
-                        <div class="text">
-                            <h3 class="step-card__title">Developement</h3>
-                            <p class="step-card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="events">
-        <div class="container">
-            <h2 class="section__headline">Latest Events</h2>
-            <div class="content">
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/events.png">
-                <div class="event">
-                    <div class="event__counter">
-                        <div class="time-card">
-                            <p class="time-card__value">316</p>
-                            <p class="time-card__type">Days</p>
-                        </div>
-                        <div class="time-card">
-                            <p class="time-card__value">19</p>
-                            <p class="time-card__type">Hours</p>
-                        </div>
-                        <div class="time-card">
-                            <p class="time-card__value">30</p>
-                            <p class="time-card__type">Minutes</p>
-                        </div>
-                        <div class="time-card">
-                            <p class="time-card__value">35</p>
-                            <p class="time-card__type">Seconds</p>
-                        </div>
-                    </div>
-                    <div class="text">
-                        <h3 class="event__title">Tech Masters Event 2021</h3>
-                        <p class="event__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur
-                            doloremque iusto ut adipisci quam ratione aliquam excepturi nulla in harum, veritatis porro
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="subscribe">
-                <form class="form">
-                    <input class="form__email" placeholder="Enter Your Email" type="email">
-                    <input class="form--btn" type="submit" value="Subscribe">
-                </form>
-            </div>
-        </div>
-        <img class="square-dots top-right"
-            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/dots.png">
-        <img class="square-dots bottom-left"
-            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/dots.png">
-    </section>
-    <section class="pricing">
-        <div class="container">
-            <h2 class="section__headline">Pricing Plans</h2>
-            <div class="grid">
-                <div class="plan-card">
-                    <p class="plan-card__type">Basic</p>
-                    <img class="plan-card__image"
-                        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/hosting-basic.png">
-                    <p class="plan-card__price">$15</p>
-                    <p class="plan-card__period">Per Month</p>
-                    <ul class="plan-card__features">
-                        <li class="feature-item">10GB HDD Space</li>
-                        <li class="feature-item">5 Email Addresses</li>
-                        <li class="feature-item">2 Subdomains</li>
-                        <li class="feature-item">4 Databases</li>
-                        <li class="feature-item">Basic Support</li>
-                    </ul>
-                    <a href="#" class="plan-card--btn">Choose Plan</a>
-                </div>
-                <div class="plan-card popular">
-                    <p class="plan-card__type">Advanced</p>
-                    <img class="plan-card__image"
-                        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/hosting-advanced.png">
-                    <p class="plan-card__price">$25</p>
-                    <p class="plan-card__period">Per Month</p>
-                    <ul class="plan-card__features">
-                        <li class="feature-item">20GB HDD Space</li>
-                        <li class="feature-item">10 Email Addresses</li>
-                        <li class="feature-item">5 Subdomains</li>
-                        <li class="feature-item">8 Databases</li>
-                        <li class="feature-item">Advanced Support</li>
-                    </ul>
+          </div>
 
-                    <a href="#" class="plan-card--btn">Choose Plan</a>
-                </div>
-                <div class="plan-card">
-                    <p class="plan-card__type">Professional</p>
-                    <img class="plan-card__image"
-                        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/hosting-professional.png">
-                    <p class="plan-card__price">$45</p>
-                    <p class="plan-card__period">Per Month</p>
-                    <ul class="plan-card__features">
-                        <li class="feature-item">50GB HDD Space</li>
-                        <li class="feature-item">20 Email Addresses</li>
-                        <li class="feature-item">10 Subdomains</li>
-                        <li class="feature-item">20 Databases</li>
-                        <li class="feature-item">Professional Support</li>
-                    </ul>
-                    <a href="#" class="plan-card--btn">Choose Plan</a>
-                </div>
+          <div class="card">
+            <img
+              class="card__image"
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-03.jpg"
+            />
+            <div class="content">
+              <h3 class="card__title">Test Title</h3>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reprehenderit
+              </p>
+              <a class="card--read-more">
+                <span>Read More</span>
+                <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
             </div>
-        </div>
-        <img class="square-dots top-right"
-            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/dots.png">
-        <img class="square-dots bottom-left"
-            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/dots.png">
+          </div>
 
+          <div class="card">
+            <img
+              class="card__image"
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-04.jpg"
+            />
+            <div class="content">
+              <h3 class="card__title">Test Title</h3>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reprehenderit
+              </p>
+              <a class="card--read-more">
+                <span>Read More</span>
+                <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="card__image"
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-05.jpg"
+            />
+            <div class="content">
+              <h3 class="card__title">Test Title</h3>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reprehenderit
+              </p>
+              <a class="card--read-more">
+                <span>Read More</span>
+                <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="card__image"
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-06.jpg"
+            />
+            <div class="content">
+              <h3 class="card__title">Test Title</h3>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reprehenderit
+              </p>
+              <a class="card--read-more">
+                <span>Read More</span>
+                <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="card__image"
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-07.jpg"
+            />
+            <div class="content">
+              <h3 class="card__title">Test Title</h3>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reprehenderit
+              </p>
+              <a class="card--read-more">
+                <span>Read More</span>
+                <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="card__image"
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/cat-08.jpg"
+            />
+            <div class="content">
+              <h3 class="card__title">Test Title</h3>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reprehenderit
+              </p>
+              <a class="card--read-more">
+                <span>Read More</span>
+                <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="video">
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="section__headline">Gallery</h2>
+        <div class="grid">
+          <div class="image-card">
+            <img
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-01.png"
+            />
+          </div>
+          <div class="image-card">
+            <img
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-02.png"
+            />
+          </div>
+          <div class="image-card">
+            <img
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-03.jpg"
+            />
+          </div>
+          <div class="image-card">
+            <img
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-04.png"
+            />
+          </div>
+          <div class="image-card">
+            <img
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-05.jpg"
+            />
+          </div>
+          <div class="image-card">
+            <img
+              alt="card image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-06.png"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section__headline">Features</h2>
+        <div class="grid">
+          <div class="feature-card red">
+            <div class="feature-card__image red">
+              <img
+                alt="feature image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/features-01.jpg"
+              />
+            </div>
+            <h2 class="feature-card__title">Quality</h2>
+            <p class="feature-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              harum hic veniam eligendi minima
+            </p>
+            <a class="feature-card--more">More</a>
+          </div>
+          <div class="feature-card green">
+            <div class="feature-card__image green">
+              <img
+                alt="feature image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/features-02.jpg"
+              />
+            </div>
+            <h2 class="feature-card__title">Time</h2>
+            <p class="feature-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              harum hic veniam eligendi minima
+            </p>
+            <a class="feature-card--more">More</a>
+          </div>
+          <div class="feature-card blue">
+            <div class="feature-card__image blue">
+              <img
+                alt="feature image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/features-03.jpg"
+              />
+            </div>
+            <h2 class="feature-card__title">Passion</h2>
+            <p class="feature-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              harum hic veniam eligendi minima
+            </p>
+            <a class="feature-card--more">More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section__headline">Testimonials</h2>
+        <div class="grid">
+          <div class="testimonial-card">
+            <div class="testimonial-card__image">
+              <img
+                alt="testimonial image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/avatar-01.png"
+              />
+            </div>
+            <h3 class="testimonial-card__title">Mohamed Farag</h3>
+            <h4 class="testimonial-card__subtitle">Full Stack Developer</h4>
+            <div class="stars">
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p class="testimonial-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              et reiciendis voluptatum, amet est natus quaerat ducimus
+            </p>
+            <div></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__image">
+              <img
+                alt="testimonial image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/avatar-02.png"
+              />
+            </div>
+            <h3 class="testimonial-card__title">Mohamed Ibrahim</h3>
+            <h4 class="testimonial-card__subtitle">Full Stack Developer</h4>
+            <div class="stars">
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p class="testimonial-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              et reiciendis voluptatum, amet est natus quaerat ducimus
+            </p>
+            <div></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__image">
+              <img
+                alt="testimonial image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/avatar-03.png"
+              />
+            </div>
+            <h3 class="testimonial-card__title">Shady Nabil</h3>
+            <h4 class="testimonial-card__subtitle">Full Stack Developer</h4>
+            <div class="stars">
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p class="testimonial-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              et reiciendis voluptatum, amet est natus quaerat ducimus
+            </p>
+            <div></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__image">
+              <img
+                alt="testimonial image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/avatar-04.png"
+              />
+            </div>
+            <h3 class="testimonial-card__title">Amr Hendawy</h3>
+            <h4 class="testimonial-card__subtitle">Full Stack Developer</h4>
+            <div class="stars">
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+            </div>
+            <p class="testimonial-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              et reiciendis voluptatum, amet est natus quaerat ducimus
+            </p>
+            <div></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__image">
+              <img
+                alt="testimonial image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/avatar-05.png"
+              />
+            </div>
+            <h3 class="testimonial-card__title">Sherief Ashraf</h3>
+            <h4 class="testimonial-card__subtitle">Full Stack Developer</h4>
+            <div class="stars">
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p class="testimonial-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              et reiciendis voluptatum, amet est natus quaerat ducimus
+            </p>
+            <div></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__image">
+              <img
+                alt="testimonial image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/avatar-06.png"
+              />
+            </div>
+            <h3 class="testimonial-card__title">Osama Mohamed</h3>
+            <h4 class="testimonial-card__subtitle">Full Stack Developer</h4>
+            <div class="stars">
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p class="testimonial-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              et reiciendis voluptatum, amet est natus quaerat ducimus
+            </p>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team-members" id="team-members">
+      <div class="container">
+        <h2 class="section__headline">Team Members</h2>
+        <div class="grid">
+          <div class="member-card">
+            <div class="media">
+              <img
+                alt="media image"
+                class="member-card__image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-01.jpg"
+              />
+              <div class="member-card--social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <h3 class="member-card__title">Name</h3>
+            <p class="member-card__desc">Simple Short Description</p>
+          </div>
+          <div class="member-card">
+            <div class="media">
+              <img
+                alt="media image"
+                class="member-card__image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-02.jpg"
+              />
+              <div class="member-card--social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <h3 class="member-card__title">Name</h3>
+            <p class="member-card__desc">Simple Short Description</p>
+          </div>
+          <div class="member-card">
+            <div class="media">
+              <img
+                alt="media image"
+                class="member-card__image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-03.jpg"
+              />
+              <div class="member-card--social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <h3 class="member-card__title">Name</h3>
+            <p class="member-card__desc">Simple Short Description</p>
+          </div>
+          <div class="member-card">
+            <div class="media">
+              <img
+                alt="media image"
+                class="member-card__image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-04.jpg"
+              />
+              <div class="member-card--social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <h3 class="member-card__title">Name</h3>
+            <p class="member-card__desc">Simple Short Description</p>
+          </div>
+          <div class="member-card">
+            <div class="media">
+              <img
+                alt="media image"
+                class="member-card__image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-05.png"
+              />
+              <div class="member-card--social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <h3 class="member-card__title">Name</h3>
+            <p class="member-card__desc">Simple Short Description</p>
+          </div>
+          <div class="member-card">
+            <div class="media">
+              <img
+                alt="media image"
+                class="member-card__image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-06.png"
+              />
+              <div class="member-card--social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <h3 class="member-card__title">Name</h3>
+            <p class="member-card__desc">Simple Short Description</p>
+          </div>
+          <div class="member-card">
+            <div class="media">
+              <img
+                alt="media image"
+                class="member-card__image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-07.jpg"
+              />
+              <div class="member-card--social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <h3 class="member-card__title">Name</h3>
+            <p class="member-card__desc">Simple Short Description</p>
+          </div>
+          <div class="member-card">
+            <div class="media">
+              <img
+                alt="media image"
+                class="member-card__image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/team-08.jpg"
+              />
+              <div class="member-card--social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <h3 class="member-card__title">Name</h3>
+            <p class="member-card__desc">Simple Short Description</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section__headline">Services</h2>
+        <div class="grid">
+          <div class="service-card">
+            <i class="service-card__icon fas fa-user-shield fa-4x"></i>
+            <h3 class="service-card__title">Security</h3>
+            <div class="service-card__footer">
+              <p class="index">01</p>
+              <p>Details</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <i class="service-card__icon fas fa-tools fa-4x"></i>
+            <h3 class="service-card__title">Fixing Issues</h3>
+            <div class="service-card__footer">
+              <p class="index">02</p>
+              <p>Details</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <i class="service-card__icon fas fa-map-marked-alt fa-4x"></i>
+            <h3 class="service-card__title">Location</h3>
+            <div class="service-card__footer">
+              <p class="index">03</p>
+              <p>Details</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <i class="service-card__icon fas fa-laptop-code fa-4x"></i>
+            <h3 class="service-card__title">Coding</h3>
+            <div class="service-card__footer">
+              <p class="index">04</p>
+              <p>Details</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <i class="service-card__icon fas fa-palette fa-4x"></i>
+            <h3 class="service-card__title">Security</h3>
+            <div class="service-card__footer">
+              <p class="index">05</p>
+              <p>Details</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <i class="service-card__icon fas fa-bullhorn fa-4x"></i>
+            <h3 class="service-card__title">Marketing</h3>
+            <div class="service-card__footer">
+              <p class="index">06</p>
+              <p>Details</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="our-skills">
+      <div class="container">
+        <h2 class="section__headline">Our Skills</h2>
+        <div class="content">
+          <img
+            alt="skill image"
+            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/skills.png"
+          />
+          <div class="skill-rates">
+            <div class="skill-rate">
+              <p class="skill-rate__name">HTML</p>
+              <div class="r-80 skill-rate__bar"></div>
+            </div>
+            <div class="skill-rate">
+              <p class="skill-rate__name">CSS</p>
+              <div class="r-85 skill-rate__bar"></div>
+            </div>
+            <div class="skill-rate">
+              <p class="skill-rate__name">JavaScript</p>
+              <div class="r-70 skill-rate__bar"></div>
+            </div>
+            <div class="skill-rate">
+              <p class="skill-rate__name">Python</p>
+              <div class="r-80 skill-rate__bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="workflow" id="how-it-works">
+      <div class="container">
+        <h2 class="section__headline">How It Works?</h2>
+        <div class="content">
+          <img
+            alt="workflow image"
+            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/work-steps.png"
+          />
+          <div class="steps">
+            <div class="step-card">
+              <img
+                alt="work step image"
+                class="step-card__image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/work-steps-1.png"
+              />
+              <div class="text">
+                <h3 class="step-card__title">Business Analysis</h3>
+                <p class="step-card__paragraph">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  nesciunt obcaecati quisquam quis laborum recusandae debitis
+                  vel
+                </p>
+              </div>
+            </div>
+            <div class="step-card">
+              <img
+                alt="work step image"
+                class="step-card__image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/work-steps-2.png"
+              />
+              <div class="text">
+                <h3 class="step-card__title">Architecture</h3>
+                <p class="step-card__paragraph">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  nesciunt obcaecati quisquam quis laborum recusandae debitis
+                  vel
+                </p>
+              </div>
+            </div>
+            <div class="step-card">
+              <img
+                alt="work step image"
+                class="step-card__image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/work-steps-3.png"
+              />
+              <div class="text">
+                <h3 class="step-card__title">Developement</h3>
+                <p class="step-card__paragraph">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                  nesciunt obcaecati quisquam quis laborum recusandae debitis
+                  vel
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="events" id="events">
+      <div class="container">
+        <h2 class="section__headline">Latest Events</h2>
+        <div class="content">
+          <img
+            alt="event image"
+            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/events.png"
+          />
+          <div class="event">
+            <div class="event__counter">
+              <div class="time-card">
+                <p class="time-card__value">316</p>
+                <p class="time-card__type">Days</p>
+              </div>
+              <div class="time-card">
+                <p class="time-card__value">19</p>
+                <p class="time-card__type">Hours</p>
+              </div>
+              <div class="time-card">
+                <p class="time-card__value">30</p>
+                <p class="time-card__type">Minutes</p>
+              </div>
+              <div class="time-card">
+                <p class="time-card__value">35</p>
+                <p class="time-card__type">Seconds</p>
+              </div>
+            </div>
+            <div class="text">
+              <h3 class="event__title">Tech Masters Event 2021</h3>
+              <p class="event__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero
+                tenetur doloremque iusto ut adipisci quam ratione aliquam
+                excepturi nulla in harum, veritatis porro
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="subscribe">
+          <form class="form">
+            <input
+              class="form__email"
+              placeholder="Enter Your Email"
+              type="email"
+            />
+            <input
+              class="form--btn"
+              type="submit"
+              value="Subscribe"
+              aria-label="submit"
+            />
+          </form>
+        </div>
+      </div>
+      <img
+        alt="dot image"
+        class="square-dots top-right"
+        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/dots.png"
+      />
+      <img
+        alt="dot image"
+        class="square-dots bottom-left"
+        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/dots.png"
+      />
+    </section>
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2 class="section__headline">Pricing Plans</h2>
+        <div class="grid">
+          <div class="plan-card">
+            <p class="plan-card__type">Basic</p>
+            <img
+              alt="plan image"
+              class="plan-card__image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/hosting-basic.png"
+            />
+            <p class="plan-card__price">$15</p>
+            <p class="plan-card__period">Per Month</p>
+            <ul class="plan-card__features">
+              <li class="feature-item">10GB HDD Space</li>
+              <li class="feature-item">5 Email Addresses</li>
+              <li class="feature-item">2 Subdomains</li>
+              <li class="feature-item">4 Databases</li>
+              <li class="feature-item">Basic Support</li>
+            </ul>
+            <a href="#" class="plan-card--btn">Choose Plan</a>
+          </div>
+          <div class="plan-card popular">
+            <p class="plan-card__type">Advanced</p>
+            <img
+              alt="plan image"
+              class="plan-card__image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/hosting-advanced.png"
+            />
+            <p class="plan-card__price">$25</p>
+            <p class="plan-card__period">Per Month</p>
+            <ul class="plan-card__features">
+              <li class="feature-item">20GB HDD Space</li>
+              <li class="feature-item">10 Email Addresses</li>
+              <li class="feature-item">5 Subdomains</li>
+              <li class="feature-item">8 Databases</li>
+              <li class="feature-item">Advanced Support</li>
+            </ul>
+
+            <a href="#" class="plan-card--btn">Choose Plan</a>
+          </div>
+          <div class="plan-card">
+            <p class="plan-card__type">Professional</p>
+            <img
+              alt="plan image"
+              class="plan-card__image"
+              src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/hosting-professional.png"
+            />
+            <p class="plan-card__price">$45</p>
+            <p class="plan-card__period">Per Month</p>
+            <ul class="plan-card__features">
+              <li class="feature-item">50GB HDD Space</li>
+              <li class="feature-item">20 Email Addresses</li>
+              <li class="feature-item">10 Subdomains</li>
+              <li class="feature-item">20 Databases</li>
+              <li class="feature-item">Professional Support</li>
+            </ul>
+            <a href="#" class="plan-card--btn">Choose Plan</a>
+          </div>
+        </div>
+      </div>
+      <img
+        alt="dot image"
+        class="square-dots top-right"
+        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/dots.png"
+      />
+      <img
+        alt="dot image"
+        class="square-dots bottom-left"
+        src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/dots.png"
+      />
+    </section>
+    <section class="video" id="video">
+      <div class="container">
+        <h2 class="section__headline">Top Videos</h2>
+        <div class="playshow">
+          <nav class="top-videos">
+            <p class="top-videos__header">
+              Top Videos <i class="fas fa-random"></i>
+            </p>
+            <ul class="top-videos__list">
+              <li class="video-item">
+                <p class="video-item__title">How to Create sub Domain</p>
+                <p class="video-item__period">05:18</p>
+              </li>
+              <li class="video-item">
+                <p class="video-item__title">Play With The DNS</p>
+                <p class="video-item__period">03:18</p>
+              </li>
+              <li class="video-item">
+                <p class="video-item__title">
+                  Everything About The Virtual Hosts
+                </p>
+                <p class="video-item__period">05:25</p>
+              </li>
+              <li class="video-item">
+                <p class="video-item__title">How to Monitor Your Website</p>
+                <p class="video-item__period">04:16</p>
+              </li>
+              <li class="video-item">
+                <p class="video-item__title">Uncharted Beating The Last Boss</p>
+                <p class="video-item__period">07:48</p>
+              </li>
+              <li class="video-item">
+                <p class="video-item__title">Ya Oath In Felghana Overview</p>
+                <p class="video-item__period">03:12</p>
+              </li>
+              <li class="video-item">
+                <p class="video-item__title">Ya Series All Games Ending</p>
+                <p class="video-item__period">08:10</p>
+              </li>
+            </ul>
+          </nav>
+          <div class="screen">
+            <div class="screen__videoplayer">
+              <img
+                alt="screen image"
+                src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/video-preview.jpg"
+              />
+            </div>
+            <p class="screen__comment">Everything About The Virtual Hosts</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stats" id="stats">
+      <div class="container">
+        <h2 class="headline">Our Awesome Stats</h2>
+        <div class="grid">
+          <div class="stats-card">
+            <i class="stats-card__icon far fa-user fa-2x fa-fw"></i>
+            <p class="stats-card__value">150</p>
+            <p class="stats-card__title">Clients</p>
+          </div>
+          <div class="stats-card">
+            <i class="stats-card__icon fas fa-code fa-2x fa-fw"></i>
+            <p class="stats-card__value">135</p>
+            <p class="stats-card__title">Projects</p>
+          </div>
+          <div class="stats-card">
+            <i class="stats-card__icon fas fa-globe-asia fa-2x fa-fw"></i>
+            <p class="stats-card__value">50</p>
+            <p class="stats-card__title">Countries</p>
+          </div>
+          <div class="stats-card">
+            <i class="stats-card__icon far fa-money-bill-alt fa-2x fa-fw"></i>
+            <p class="stats-card__value">500</p>
+            <p class="stats-card__title">Money</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="discounts" id="discounts">
+      <div class="discount-anouncement">
         <div class="container">
-            <h2 class="section__headline">Top Videos</h2>
-            <div class="playshow">
-                <nav class="top-videos">
-                    <p class="top-videos__header">Top Videos <i class="fas fa-random"></i></p>
-                    <ul class="top-videos__list">
-                        <li class="video-item">
-                            <p class="video-item__title">How to Create sub Domain</p>
-                            <p class="video-item__period">05:18</p>
-                        </li>
-                        <li class="video-item">
-                            <p class="video-item__title">Play With The DNS</p>
-                            <p class="video-item__period">03:18</p>
-                        </li>
-                        <li class="video-item">
-                            <p class="video-item__title">Everything About The Virtual Hosts</p>
-                            <p class="video-item__period">05:25</p>
-                        </li>
-                        <li class="video-item">
-                            <p class="video-item__title">How to Monitor Your Website</p>
-                            <p class="video-item__period">04:16</p>
-                        </li>
-                        <li class="video-item">
-                            <p class="video-item__title">Uncharted Beating The Last Boss</p>
-                            <p class="video-item__period">07:48</p>
-                        </li>
-                        <li class="video-item">
-                            <p class="video-item__title">Ya Oath In Felghana Overview</p>
-                            <p class="video-item__period">03:12</p>
-                        </li>
-                        <li class="video-item">
-                            <p class="video-item__title">Ya Series All Games Ending</p>
-                            <p class="video-item__period">08:10</p>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="screen">
-                    <div class="screen__videoplayer">
-                        <img
-                            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/video-preview.jpg" />
-                    </div>
-                    <p class="screen__comment">
-                        Everything About The Virtual Hosts
-                    </p>
-                </div>
-            </div>
+          <h2 class="headline">We Have A Discount</h2>
+          <p class="discount-anouncement__paragraph">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+            asperiores consectetur, recusandae ratione provident necessitatibus,
+            cumque delectus commodi fuga praesentium beatae. Totam vel similique
+            laborum dicta aperiam odit doloribus corporis.
+          </p>
+          <img
+            alt="discount image"
+            class="discount-anouncement__image"
+            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/discount.png"
+          />
         </div>
-    </section>
-    <section class="stats">
+      </div>
+      <div class="discount-request">
         <div class="container">
-            <h2 class="headline"> Our Awesome Stats</h2>
-            <div class="grid">
-                <div class="stats-card">
-                    <i class="stats-card__icon far fa-user fa-2x fa-fw"></i>
-                    <p class="stats-card__value">150</p>
-                    <p class="stats-card__title">Clients</p>
-                </div>
-                <div class="stats-card">
-                    <i class="stats-card__icon fas fa-code fa-2x fa-fw"></i>
-                    <p class="stats-card__value">135</p>
-                    <p class="stats-card__title">Projects</p>
-                </div>
-                <div class="stats-card">
-                    <i class="stats-card__icon fas fa-globe-asia fa-2x fa-fw"></i>
-                    <p class="stats-card__value">50</p>
-                    <p class="stats-card__title">Countries</p>
-                </div>
-                <div class="stats-card">
-                    <i class="stats-card__icon far fa-money-bill-alt fa-2x fa-fw"></i>
-                    <p class="stats-card__value">500</p>
-                    <p class="stats-card__title">Money</p>
-                </div>
-            </div>
+          <h2 class="headline">Request A Discount</h2>
+          <form class="input-form">
+            <input
+              class="input input-form__name"
+              type="text"
+              placeholder="Your Name"
+            />
+            <input
+              class="input input-form__email"
+              type="email"
+              placeholder="Your Email"
+            />
+            <input
+              class="input input-form__phone"
+              type="tel"
+              placeholder="Your Phone"
+            />
+            <textarea
+              class="input input-form__needs"
+              placeholder="Tell Us About Your Needs"
+            ></textarea>
+            <input type="submit" value="Send" aria-label="submit" />
+          </form>
         </div>
-    </section>
-    <section class="discounts">
-        <div class="discount-anouncement">
-            <div class="container">
-                <h2 class="headline">We Have A Discount</h2>
-                <p class="discount-anouncement__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Excepturi asperiores consectetur, recusandae ratione provident necessitatibus, cumque delectus
-                    commodi
-                    fuga praesentium beatae. Totam vel similique laborum dicta aperiam odit doloribus corporis. </p>
-                <img class="discount-anouncement__image"
-                    src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/discount.png" />
-            </div>
-        </div>
-        <div class="discount-request">
-            <div class="container">
-                <h2 class="headline">Request A Discount</h2>
-                <form class="input-form">
-                    <input class="input input-form__name" type="text" placeholder="Your Name">
-                    <input class="input input-form__email" type="email" placeholder="Your Email">
-                    <input class="input input-form__phone" type="tel" placeholder="Your Phone">
-                    <textarea class="input input-form__needs" placeholder="Tell Us About Your Needs"></textarea>
-                    <input type="submit" value="Send">
-                </form>
-            </div>
-        </div>
+      </div>
     </section>
     <footer>
-        <div class="container">
-            <div class="info">
-                <h2 class="info__title">Elzero</h2>
-                <div class="info__social">
-                    <a class="facebook" href="#"><i class=" fab fa-facebook-f"></i></a>
-                    <a class="twitter" href="#"><i class=" fab fa-twitter"></i></a>
-                    <a class="youtube" href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-                <p class="info__ack">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem,
-                    dignissimos iste aspernatur</p>
-            </div>
-            <ul class="footer__links">
-                <li><a class="link-item" href="#">Important Link 1</a></li>
-                <li><a class="link-item" href="#">Important Link 2</a></li>
-                <li><a class="link-item" href="#">Important Link 3</a></li>
-                <li><a class="link-item" href="#">Important Link 4</a></li>
-                <li><a class="link-item" href="#">Important Link 5</a></li>
-            </ul>
-            <div class="footer__contact">
-                <div class="contact__item">
-                    <i class="fas fa-map-marker-alt fa-fw"></i>
-                    <p>Egypt, Giza, Inside The Sphinx, Room Number 220</p>
-                </div>
-                <div class="contact__item">
-                    <i class="far fa-clock fa-fw"></i>
-                    <p>Business Hours: From 10:00 To 18:00</p>
-                </div>
-                <div class="contact__item">
-                    <i class="fas fa-phone-volume fa-fw"></i>
-                    <div class="phones">
-                        <p>+20123456789</p>
-                        <p>+20198765432</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__gallery">
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-01.png" />
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-02.png" />
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-03.jpg" />
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-04.png" />
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-05.jpg" />
-                <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-06.png" />
-            </div>
+      <div class="container">
+        <div class="info">
+          <h2 class="info__title">Elzero</h2>
+          <div class="info__social">
+            <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="youtube" href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          <p class="info__ack">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
+            nulla rem, dignissimos iste aspernatur
+          </p>
         </div>
-        <p class="acknowledgment">Made With &#8826;3 By Passant </p>
+        <ul class="footer__links">
+          <li><a class="link-item" href="#">Important Link 1</a></li>
+          <li><a class="link-item" href="#">Important Link 2</a></li>
+          <li><a class="link-item" href="#">Important Link 3</a></li>
+          <li><a class="link-item" href="#">Important Link 4</a></li>
+          <li><a class="link-item" href="#">Important Link 5</a></li>
+        </ul>
+        <div class="footer__contact">
+          <div class="contact__item">
+            <i class="fas fa-map-marker-alt fa-fw"></i>
+            <p>Egypt, Giza, Inside The Sphinx, Room Number 220</p>
+          </div>
+          <div class="contact__item">
+            <i class="far fa-clock fa-fw"></i>
+            <p>Business Hours: From 10:00 To 18:00</p>
+          </div>
+          <div class="contact__item">
+            <i class="fas fa-phone-volume fa-fw"></i>
+            <div class="phones">
+              <p>+20123456789</p>
+              <p>+20198765432</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__gallery">
+          <img
+            alt="gallery image"
+            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-01.png"
+          />
+          <img
+            alt="gallery image"
+            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-02.png"
+          />
+          <img
+            alt="gallery image"
+            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-03.jpg"
+          />
+          <img
+            alt="gallery image"
+            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-04.png"
+          />
+          <img
+            alt="gallery image"
+            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-05.jpg"
+          />
+          <img
+            alt="gallery image"
+            src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/gallery-06.png"
+          />
+        </div>
+      </div>
+      <p class="acknowledgment">Made With &#8826;3 By Passant</p>
     </footer>
-</body>
-
+  </body>
 </html>

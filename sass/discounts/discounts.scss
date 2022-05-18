@@ -1,0 +1,104 @@
+@import "../helpers/mixins";
+@import "../helpers/global-rules";
+
+.discounts {
+    display: flex;
+  
+    @include responsive(mobile) {
+      flex-direction: column;
+    }
+  
+    @include responsive(small) {
+      flex-direction: column;
+    }
+  
+    .headline {
+      font-size: 40px;
+      letter-spacing: -1.5px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  .discount-anouncement {
+    padding: $section-padding 0;
+    display: flex;
+    align-items: center;
+    background-image: url("https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/discount-background1.jpg");
+    background-size: cover;
+    position: relative;
+    flex-basis: 50%;
+    z-index: 0;
+    text-align: center;
+    color: white;
+  
+    .container {
+      max-width: 550px;
+      margin: auto;
+    }
+  
+    @include overlay(0.97);
+  
+    &::before {
+      background-color: $primary-color;
+      z-index: -1;
+    }
+  
+    &__paragraph {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+  
+    &__image {
+      width: 300px;
+      max-width: 100%;
+    }
+  }
+  
+  .discount-request {
+    display: flex;
+    align-items: center;
+    padding: $section-padding 0;
+  
+    .container {
+      margin: auto;
+      max-width: 380px;
+    }
+  
+    flex-basis: 50%;
+    text-align: center;
+  
+    .input-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+  
+      .input {
+        font-size: 15px;
+        background-color: #f9f9f9;
+        border: none;
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+        caret-color: $primary-color;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      input[type="submit"] {
+        border: none;
+        padding: 15px 0;
+        background-color: $primary-color;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+      }
+  
+      textarea {
+        height: 200px;
+      }
+    }
+  }
+  

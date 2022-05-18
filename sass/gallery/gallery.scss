@@ -1,0 +1,30 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+@import "../helpers/global-rules";
+
+.gallery {
+  position: relative;
+  z-index: 1;
+  padding: $section-padding 0;
+  background-color: $section-background;
+}
+
+.image-card {
+  $this: &;
+  position: relative;
+  border: 15px solid white;
+  box-shadow: 0 5px 12px #c6c6c6;
+  @include card;
+  @include fit-image;
+  @include growing-center-splash($this, white);
+
+  &:hover {
+    img {
+      @include transform((rotate(5deg) scale(1.1)));
+    }
+  }
+
+  img {
+    @include transition($primary-transition);
+  }
+}

@@ -1,0 +1,93 @@
+@import "../helpers/mixins";
+@import "../helpers/global-rules";
+@import "../helpers/variables";
+.services {
+  padding: $section-padding 0;
+  background-color: $section-background;
+}
+
+.service-card {
+  $border-width: 2px;
+  position: relative;
+  background-color: white;
+  padding: 30px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0px 5px 15px #77777754;
+  @include transition(0.3s);
+  @include card-2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: calc(-2 * #{$border-width});
+    width: 0;
+    border: 0px solid $primary-color;
+    @include transform(translateX(-50%));
+    @include transition(width 0.3s);
+  }
+
+  &:hover {
+    @include transform(translateY(-10px));
+
+    &::before {
+      border-width: $border-width;
+      width: calc(100% - #{$border-width});
+    }
+  }
+
+  &__icon {
+    color: #ddd;
+  }
+
+  &__title {
+    color: $primary-color;
+    font-size: 25px;
+  }
+
+  &__footer {
+    margin-top: 20px;
+    padding: 0 20px;
+    @include flex-space-center;
+    width: calc(100% + 60px);
+    background-color: #f9f9f9;
+    text-align: right;
+
+    p {
+      color: $primary-color;
+    }
+
+    .index {
+      font-size: 30px;
+      color: white;
+      font-weight: 700;
+      position: relative;
+      z-index: 2;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 0;
+        height: 100%;
+        background-color: $primary-color;
+        width: 260%;
+        z-index: -2;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 100%;
+        left: calc(260% - 40px);
+        @include transform(skewX(-30deg));
+        background-color: #d5d5d5;
+      }
+    }
+  }
+}

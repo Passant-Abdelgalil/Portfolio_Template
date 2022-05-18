@@ -1,0 +1,72 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+@import "../helpers/global-rules";
+.articles {
+    padding: $section-padding 0;
+    text-align: center;
+}  
+.card {
+  $this: &;
+  box-shadow: 0px 2px 15px #7e7e7e3d;
+  text-align: left;
+  @include card;
+  @include transition($primary-transition);
+  @include border-radius(5px);
+  $content-side-padding: 20px;
+
+  .content {
+    padding: 10px $content-side-padding 0;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 100%;
+    border-style: none;
+  }
+
+  &__desc {
+    color: #777;
+    margin-bottom: 20px;
+  }
+
+  &--read-more {
+    position: relative;
+    padding: 15px 0;
+    color: $primary-color;
+    font-weight: 700;
+    width: 100%;
+    @include flex-space-center;
+
+    * {
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      width: calc(100% + 40px);
+      position: absolute;
+      left: -$content-side-padding;
+      top: 0;
+      border-top: 1px solid #ddd;
+    }
+
+    span:hover {
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 4px 20px #7e7e7e3d;
+    @include transform(translateY(-10px));
+
+    #{$this}--read-more i {
+      @include keyframes-animation(shake) {
+        to {
+          @include transform(translateX(10px));
+        }
+      }
+
+      @include animation(shake 0.5s ease-out both infinite);
+    }
+  }
+}

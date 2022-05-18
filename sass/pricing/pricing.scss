@@ -1,0 +1,161 @@
+@import "../helpers/mixins";
+@import "../helpers/global-rules";
+
+.pricing {
+    position: relative;
+    padding: $section-padding 0;
+    background-color: $section-background;
+    position: relative;
+    z-index: 1;
+  
+    .grid {
+      margin-top: 80px;
+      justify-content: space-around;
+  
+      @include responsive(mobile) {
+        justify-content: flex-start;
+      }
+    }
+  
+    @include responsive(mobile) {
+      .square-dots {
+        &.top-right {
+          top: 8%;
+        }
+  
+        &.bottom-left {
+          bottom: 0;
+        }
+      }
+    }
+  }
+  
+  .plan-card {
+    z-index: 2;
+    $this: &;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 5px 15px #bfbfbf;
+    @include card-2;
+  
+    &__type {
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      padding: 20px 0;
+      display: block;
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+  
+    &__image {
+      max-width: 80px;
+    }
+  
+    &__price {
+      font-size: 60px;
+      color: $primary-color;
+      font-weight: 700;
+    }
+  
+    &__period {
+      margin-top: -20px;
+      color: #777;
+    }
+  
+    &__features {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin: 10px 0;
+  
+      .feature-item {
+        width: 100%;
+        padding: 15px;
+        border-top: 1px solid $section-background;
+  
+        &::before {
+          font-family: "Font Awesome 5 Free";
+          content: "\f00c";
+          color: $primary-color;
+          font-weight: 900;
+          margin-right: 10px;
+        }
+      }
+    }
+  
+    &--btn {
+      color: $primary-color;
+      padding: 10px 20px;
+      font-weight: 700;
+      border: 2px solid $primary-color;
+      @include border-radius(8px);
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+  
+    &.popular {
+      position: relative;
+  
+      @include responsive(large) {
+        @include transform(translateY(-20px));
+      }
+  
+      #{$this}__type::before {
+        content: "Most Popular";
+        position: absolute;
+        top: 48px;
+        right: -35px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        background-color: $primary-color;
+        padding: 5px 10px;
+        padding-right: 40px;
+        @include transform(rotate(90deg));
+      }
+  
+      #{$this}__type::after {
+        content: "";
+        position: absolute;
+        border: 22px solid;
+        right: 15px;
+        top: 97px;
+        border-color: transparent transparent white transparent;
+      }
+    }
+  
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #f6f6f6;
+      width: 0;
+      height: 50%;
+      z-index: -1;
+      @include transition(0.3s);
+    }
+  
+    &::before {
+      top: 0;
+      left: 0;
+    }
+  
+    &::after {
+      right: 0;
+      bottom: 0;
+    }
+  
+    &:hover {
+      &::before,
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  

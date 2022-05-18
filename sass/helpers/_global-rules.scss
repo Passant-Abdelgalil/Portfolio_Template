@@ -31,7 +31,7 @@ a {
   margin: auto;
 
   @include responsive(mobile) {
-    width: 100%;
+    width: 99vw;
   }
 
   @include responsive(small) {
@@ -49,13 +49,15 @@ a {
 
 .section__headline {
   position: relative;
+  z-index: 0;
+  width: -moz-fit-content;
   width: fit-content;
   font-size: 30px;
   text-transform: uppercase;
   border: 2px solid black;
-  padding: 0 20px;
+  padding: 0px 20px;
   margin: auto;
-
+  margin-top: 20px;
   &::before,
   &::after {
     content: "";
@@ -81,7 +83,7 @@ a {
     @include keyframes-animation(turn-white) {
       to {
         color: white;
-        border-color: white
+        border-color: white;
       }
     }
 

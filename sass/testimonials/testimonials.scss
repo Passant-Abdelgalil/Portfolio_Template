@@ -1,0 +1,53 @@
+@import "../helpers/mixins";
+@import "../helpers/global-rules";
+
+.testimonials {
+  padding: $section-padding 0;
+  background-color: $section-background;
+  position: relative;
+  z-index: 1;
+
+  .grid {
+    gap: 40px;
+  }
+}
+
+.testimonial-card {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  @include border-radius(8px);
+  @include card-2;
+
+  &__image {
+    $dim: 100px;
+    $border-width: 10px;
+    position: absolute;
+    right: -$border-width;
+    top: calc(-#{$dim}/ 2);
+    width: $dim;
+    height: $dim;
+    overflow: hidden;
+    border: $border-width solid $section-background;
+    @include fit-image;
+    @include border-radius(calc(#{$dim}/ 2));
+  }
+
+  &__title {
+    font-size: 20px;
+  }
+
+  &__subtitle {
+    color: #777;
+    font-weight: 400;
+  }
+
+  &__paragraph {
+    color: #777;
+    line-height: 1.5;
+  }
+
+  .stars .filled {
+    color: #ffc107;
+  }
+}

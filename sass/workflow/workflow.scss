@@ -1,0 +1,72 @@
+@import "../helpers/mixins";
+@import "../helpers/global-rules";
+
+.workflow {
+    background-color: $section-background;
+    position: relative;
+    z-index: 2;
+    padding: $section-padding 0;
+  
+    .content {
+      margin-top: 100px;
+      @include flex-space-center;
+  
+      @include responsive(small) {
+        flex-direction: column;
+      }
+  
+      @include responsive(mobile) {
+        flex-direction: column;
+      }
+  
+      > img {
+        width: 49%;
+        max-width: 500px;
+        max-height: 500px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 50%;
+  
+    @include responsive(medium) {
+      flex-basis: 40%;
+    }
+  }
+  
+  .step-card {
+    position: relative;
+    background-color: #f6f5f5;
+    padding: 25px 40px;
+    gap: 30px;
+    border: 2px solid white;
+    z-index: 2;
+    @include flex-space-center;
+    @include border-radius(5px);
+    @include growing-center-splash(&, #ededed, 1, false);
+  
+    &__image {
+      max-height: 60px;
+    }
+  
+    &__title {
+      font-size: 22px;
+    }
+  
+    &__paragraph {
+      font-size: 17px;
+      color: #777;
+    }
+  
+    @include responsive(mobile) {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  
